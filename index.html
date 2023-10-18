@@ -140,14 +140,14 @@
         O Projeto e Basicamente Um Codigo Que Pega Uma Senha Simples e Gera Uma Outra Senha Mais Complexa<br>
         Lembrando Que o Projeto Permite Que a Senha Seja Salva Em Um Banco de Dados (<mark>Sqlite3</mark>) Que Ajuda No Armazenamento Das Senhas
         </p>
-        <img src="geradorsenha.png" alt="Imagen"><br>
+        <img class="img" src="geradorsenha.png" alt="Imagen"><br>
         <a href="https://github.com/SenhorLoock/GeradorSenha">Codigo</a>
         <h4>MirrorYouTube</h4>
         <p>
             O Projeto Utilisa o Framework Pytube Juntamente Com o Pydub Que Permite Baixar Videos Ou Playlist Do Youtube.<br>
             Alem De Permitir Fazer o Download Dos Videos Ou Playlists Tambem Permite Que Converta Ambos Para Audio. 
         </p>
-        <img src="mirroryoutube.png" alt="Imagen"><br>
+        <img class="img" src="mirroryoutube.png" alt="Imagen"><br>
         <a href="https://github.com/SenhorLoock/MirrorYoutube">Codigo</a>
         <h4>JyPyUI</h4>
         <p>
@@ -159,7 +159,7 @@
             E Um Software Que Simula Um Acesso De Usuario a Um Painel De Login Via Terminal.<br>
             Como o Software Gerador De Senhas O PainelLogin Tambem Usa o (<mark>Sqlite</mark>)
         </p>
-        <img src="painellogin.png" alt="Imagen"><br>
+        <img class="img" src="painellogin.png" alt="Imagen"><br>
         <a href="https://github.com/SenhorLoock/PainelLogin">Codigo</a>
     </div>
     <div>
@@ -173,4 +173,23 @@
         </a>
     </div>
 </body>
+<script>
+    // Função para criar animações
+    function startAnimation() {
+        const img = document.querySelector('img');
+        img.style.transition = 'width 0.5s';
+
+        img.addEventListener('mouseenter', () => {
+            img.style.width = '700px';
+        });
+
+        img.addEventListener('mouseleave', () => {
+            img.style.width = '350px';
+        });
+    }
+
+    // Aguarde até que o documento esteja carregado
+    window.addEventListener('load', startAnimation);
+</script>
+
 </html>
