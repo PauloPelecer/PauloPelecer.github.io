@@ -3,16 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icon.png" type="image/png">
     <title>Paulo Henrique - Portifolio</title>
     <style>
         body {
-            background-color: azure;
+            background: linear-gradient(135deg, #b0e0e6, #003366, #f0f8ff, #003366);
+            background-size: 400% 400%;
+            animation: gradientAnimation 10s linear infinite;
+        }
+        
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
         }
         
         div {
-            background-color: deepskyblue;
+            background-color: rgba(11, 74, 97, 0.767);
             padding: 5px;
             margin-top: 5px;
+            margin-left: 60px;
+            margin-right: 60px;
             border-radius: 20px;
             text-align: center;
         }
@@ -33,7 +50,9 @@
             color: rgb(221, 219, 116);
             font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         }
-        
+        p{
+            color: lightblue;
+        }
         a {
             color: white;
             text-decoration-line: none;
@@ -41,6 +60,17 @@
         
         a:hover {
             color: beige;
+        }
+        input{
+            width: 250px;
+            height: 30px;
+            border-radius: 25px;
+            margin-top: 10px;
+            border: none;
+        }
+        .Whats{
+            background-color: rgb(15, 165, 15);
+            color: whitesmoke;
         }
         
         /* Media Query para dispositivos móveis */
@@ -60,6 +90,17 @@
             h4 {
                 font-size: 18px; /* Ajuste o tamanho da fonte conforme necessário */
             }
+            input{
+                width: 250px;
+                height: 30px;
+                border-radius: 25px;
+                margin-top: 10px;
+                border: none;
+            }
+            .Whats{
+                background-color: rgb(15, 165, 15);
+                color: whitesmoke;
+            }
         }
         
     </style>
@@ -72,7 +113,7 @@
     <div>
         <h2>Apresentação</h2>
         <p>
-        Olá, Me Chamo Paulo Henrique Sou Programador BackEnd a Dois Anos.<br>
+        Ola Me Chamo Paulo Henrique Sou Programador BackEnd a Dois Anos.<br>
         Meus Ultimos Projetos Foram Desenvolvido Na Linguagem De Programação <mark class="name_python">Python</mark><br>
         Utilisei Bastante Banco De Dados (<mark class="name_sqlite">Sqlite3</mark>) Do <mark class="name_python">Python</mark> Para Desenvolvimento Android Para Empresas Privadas.<br>
         Utiliso Interface Grafica (<mark>kivy</mark>) Do <mark>Python</mark> Para Melhor Compatibilidade Com o Sistema Operacional Do Aparelho.<br>
@@ -104,7 +145,13 @@
     </div>
     <div>
         <h2>Fale Comigo</h2>
-        <input type="submit" value="Via Whatsapp">
+        <a href="https://wa.me/+5562993386905">
+            <input type="submit" value="Whatsapp" class="Whats">
+        </a>
+        <br>
+        <a href="mailto:ppelecer@gmail.com">
+            <input type="submit" value="Email" name="Email">
+        </a>
     </div>
 </body>
 </html>
