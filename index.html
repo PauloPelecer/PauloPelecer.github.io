@@ -1,51 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfólio - Backend</title>
-    <link rel="stylesheet" href="portfolio.css">
+    <title>Paulo Henrique - Portifolio</title>
+    <style>
+        body {
+            background-color: azure;
+        }
+        
+        div {
+            background-color: deepskyblue;
+            padding: 5px;
+            margin-top: 5px;
+            border-radius: 20px;
+            text-align: center;
+        }
+        
+        h1, h2 {
+            text-decoration: underline;
+            color: whitesmoke;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        
+        mark {
+            background-color: whitesmoke;
+            border-radius: 20px;
+            padding: 1.2px;
+        }
+        
+        h4 {
+            color: rgb(221, 219, 116);
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        
+        a {
+            color: white;
+            text-decoration-line: none;
+        }
+        
+        a:hover {
+            color: beige;
+        }
+        
+        /* Media Query para dispositivos móveis */
+        @media screen and (max-width: 768px) {
+            body {
+                font-size: 15px; /* Ajuste o tamanho da fonte conforme necessário */
+            }
+        
+            div {
+                margin: 10px; /* Ajuste a margem conforme necessário */
+            }
+        
+            h1, h2 {
+                font-size: 25px; /* Ajuste o tamanho da fonte conforme necessário */
+            }
+        
+            h4 {
+                font-size: 18px; /* Ajuste o tamanho da fonte conforme necessário */
+            }
+        }
+        
+    </style>
 </head>
-
 <body>
-    <header>
-        <h1>Meu Portfólio - Backend</h1>
-    </header>
+    <div>
+        <h1>Meu Portifolio Python</h1>
+        
+    </div>
+    <div>
+        <h2>Apresentação</h2>
+        <p>
+        Ola Me Chamo Paulo Henrique Sou Programador BackEnd a Dois Anos.<br>
+        Meus Ultimos Projetos Foram Desenvolvido Na Linguagem De Programação <mark class="name_python">Python</mark><br>
+        Utilisei Bastante Banco De Dados (<mark class="name_sqlite">Sqlite3</mark>) Do <mark class="name_python">Python</mark> Para Desenvolvimento Android Para Empresas Privadas.<br>
+        Utiliso Interface Grafica (<mark>kivy</mark>) Do <mark>Python</mark> Para Melhor Compatibilidade Com o Sistema Operacional Do Aparelho.<br>
 
-    <main>
-        <section class="project">
-            <h2>Gerador de Senha</h2>
-            <p>Um gerador de senhas aleatórias desenvolvido em Python com a utilização do SQLite para armazenamento seguro.</p>
-            <div class="tags">
-                <span class="tag">Python</span>
-                <span class="tag">SQLite</span>
-            </div>
-            <div class="description">
-                <p>O gerador de senha é uma aplicação de linha de comando que permite ao usuário gerar senhas fortes de forma aleatória e armazená-las com segurança no banco de dados SQLite.</p>
-            </div>
-            <div class="links">
-                <a href="https://github.com/SenhorLoock/GeradorSenha">Código Fonte</a>
-            </div>
-        </section>
-
-        <section class="project">
-            <h2>MirrorYouTube</h2>
-            <p>Um script em Python que baixa vídeos do YouTube utilizando as bibliotecas PyTube e PyDub.</p>
-            <div class="tags">
-                <span class="tag">Python</span>
-                <span class="tag">PyTube</span>
-                <span class="tag">PyDub</span>
-            </div>
-            <div class="description">
-                <p>O MirrorYouTube é um script que permite baixar vídeos do YouTube e convertê-los para outros formatos de áudio utilizando as bibliotecas PyTube e PyDub.</p>
-            </div>
-            <div class="links">
-                <a href="https://github.com/SenhorLoock/MirrorYoutube">Código Fonte</a>
-            </div>
-        </section>
-    </main>
+        </p>
+    </div>
+    <div>
+        <h2>Meus Trabalhos</h2>
+        <h4>Gerador De Senhas</h4>
+        <p>
+        O Projeto e Basicamente Um Codigo Que Pega Uma Senha Simples e Gera Uma Outra Senha Mais Complexa<br>
+        Lembrando Que o Projeto Permite Que a Senha Seja Salva Em Um Banco de Dados (<mark>Sqlite3</mark>) Que Ajuda No Armazenamento Das Senhas
+        </p><a href="https://github.com/SenhorLoock/GeradorSenha">Codigo</a>
+        <h4>MirrorYouTube</h4>
+        <p>
+            O Projeto Utilisa o Framework Pytube Juntamente Com o Pydub Que Permite Baixar Videos Ou Playlist Do Youtube.<br>
+            Alem De Permitir Fazer o Download Dos Videos Ou Playlists Tambem Permite Que Converta Ambos Para Audio. 
+        </p><a href="https://github.com/SenhorLoock/MirrorYoutube">Codigo</a>
+        <h4>JyPyUI</h4>
+        <p>
+            E Um Framework Que Estou Desenvolvendo Que Gera Elementos Prontos e Personalisaveis Da Interface (<mark>pygame</mark>)<br>
+            Que Permita Que o Programador Seja Mais Pratico No Desenvolvimento Do Seu Software  
+        </p><a href="https://jypyui.netlify.app">Codigo</a>
+        <h4>PainelLogin</h4>
+        <p>
+            E Um Software Que Simula Um Acesso De Usuario a Um Painel De Login Via Terminal.<br>
+            Como o Software Gerador De Senhas O PainelLogin Tambem Usa o (<mark>Sqlite</mark>)
+        </p><a href="https://github.com/SenhorLoock/PainelLogin">Codigo</a>
+    </div>
 </body>
-
 </html>
-
